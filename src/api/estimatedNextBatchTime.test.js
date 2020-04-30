@@ -21,7 +21,7 @@ describe('dvf.estimatedNextBatchTime', () => {
       .reply(200, apiResponse)
 
     const response = await dvf.estimatedNextBatchTime()
-    expect(JSON.parse(response)).toEqual(apiResponse)
+    expect(response).toEqual(apiResponse)
   })
 
   it('Posts to config API and gets error response', async () => {
